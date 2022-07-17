@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>HangMan</title>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+        integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf"
+        crossorigin="anonymous"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- CSS and JS -->
+    <link href="./style.css" rel="stylesheet" />
+    <script src="./game.js"></script>
+
+    <div class="container pt-3">
+
+        <div class="row text-center">
+            <div class="col-sm-4 text-center">
+                <h1>!GUESS THE WORD!</h1>
+                <p>Click on the alphabets to guess the word!</p>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-sm-4 text-center">
+                <h1>!GUESS The Word!</h1>
+                <p>Click on the alphabets to guess the word!</p>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-sm-4 text-center" id="alphabets">
+                <button type="button" id="A" class="btn btn-outline-primary clickable">A</button>
+                <button type="button" id="B" class="btn btn-outline-primary clickable">B</button>
+                <button type="button" id="C" class="btn btn-outline-primary clickable">C</button>
+                <button type="button" id="D" class="btn btn-outline-primary clickable">D</button>
+                <button type="button" id="E" class="btn btn-outline-primary clickable">E</button>
+                <button type="button" id="F" class="btn btn-outline-primary clickable">F</button>
+                <button type="button" id="G" class="btn btn-outline-primary clickable">G</button>
+                <button type="button" id="H" class="btn btn-outline-primary clickable">H</button>
+                <button type="button" id="I" class="btn btn-outline-primary clickable">I</button>
+                <button type="button" id="J" class="btn btn-outline-primary clickable">J</button>
+                <button type="button" id="K" class="btn btn-outline-primary clickable">K</button>
+                <button type="button" id="L" class="btn btn-outline-primary clickable">L</button>
+                <button type="button" id="M" class="btn btn-outline-primary clickable">M</button>
+                <button type="button" id="N" class="btn btn-outline-primary clickable">N</button>
+                <button type="button" id="O" class="btn btn-outline-primary clickable">O</button>
+                <button type="button" id="P" class="btn btn-outline-primary clickable">P</button>
+                <button type="button" id="Q" class="btn btn-outline-primary clickable">Q</button>
+                <button type="button" id="R" class="btn btn-outline-primary clickable">R</button>
+                <button type="button" id="S" class="btn btn-outline-primary clickable">S</button>
+                <button type="button" id="T" class="btn btn-outline-primary clickable">T</button>
+                <button type="button" id="U" class="btn btn-outline-primary clickable">U</button>
+                <button type="button" id="V" class="btn btn-outline-primary clickable">V</button>
+                <button type="button" id="W" class="btn btn-outline-primary clickable">W</button>
+                <button type="button" id="X" class="btn btn-outline-primary clickable">X</button>
+                <button type="button" id="Y" class="btn btn-outline-primary clickable">Y</button>
+                <button type="button" id="Z" class="btn btn-outline-primary clickable">Z</button>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-sm-4 text-center">
+                <span>Remaining Life:</span>
+                <span id="life">5</span>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-sm-4 text-center">
+                <span>Hint: Word Category is</span>
+                <span id="hint"></span>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-sm-4 text-center">
+                <p id="blanks"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center">
+        <div class="col-sm-4 text-center">
+            <p id="result"></p>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
